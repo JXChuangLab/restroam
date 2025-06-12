@@ -65,7 +65,7 @@ function Footer() {
         <footer className="mt-12 bg-gray-50 py-8 text-center text-sm text-gray-600">
             <div className="space-y-2">
                 <div className="font-semibold text-gray-800">Rest & Roam Pty Ltd</div>
-                <div>Short-term accommodation（短租公寓）</div>
+                <div>Short-term accommodation</div>
                 <div>
                     AU: <a href="tel:+61451105818" className="hover:text-indigo-600">+61&nbsp;451&nbsp;105&nbsp;818</a> |
                     CN: <a href="tel:+8613798461669" className="hover:text-indigo-600">+86&nbsp;137&nbsp;9846&nbsp;1669</a>
