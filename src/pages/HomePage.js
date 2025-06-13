@@ -28,10 +28,12 @@ export default function HomePage() {
             </section>
 
             {/* Features */}
-            <section className="mx-auto max-w-6xl space-y-16 px-4 pb-24 lg:space-y-24">
+            <section className="mx-auto max-w-6xl space-y-24 px-4 py-24">
                 {/* Refined Property Curation */}
                 <FeatureBlock
                     title="Refined Property Curation"
+                    image="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80"
+                    imageAlt="Modern luxury interior design"
                     items={[
                         {
                             heading: "Architect‑Led Space Renovation",
@@ -50,6 +52,9 @@ export default function HomePage() {
                 {/* Elite Concierge Corp */}
                 <FeatureBlock
                     title="Elite Concierge Corp"
+                    image="https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&w=800&q=80"
+                    imageAlt="Professional concierge service"
+                    reverse={true}
                     items={[
                         {
                             heading: "Bilingual Services (English / Chinese)",
@@ -68,6 +73,8 @@ export default function HomePage() {
                 {/* Move‑In Level Cleaning System */}
                 <FeatureBlock
                     title="Move‑In Level Cleaning System"
+                    image="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80"
+                    imageAlt="Professional cleaning service"
                     items={[
                         {
                             heading: "Comprehensive Check‑Out Cleaning Protocol",
@@ -105,26 +112,44 @@ export default function HomePage() {
 }
 
 /* -------------------------------------------------- */
-function FeatureBlock({ title, items }) {
+function FeatureBlock({ title, items, image, imageAlt, reverse = false }) {
     return (
         <div className="space-y-8">
-            <h2 className="text-2xl font-bold text-gray-900 md:text-3xl lg:text-4xl">
+            <h2 className="text-center text-2xl font-bold text-gray-900 md:text-3xl lg:text-4xl">
                 {title}
             </h2>
-            <div className="grid gap-8 md:grid-cols-3">
-                {items.map(({ heading, body }) => (
-                    <div
-                        key={heading}
-                        className="rounded-xl bg-white p-6 shadow-md transition hover:shadow-lg"
-                    >
-                        <h3 className="mb-2 text-lg font-semibold text-indigo-600">
-                            ▸ {heading}
-                        </h3>
-                        <p className="text-sm leading-relaxed text-gray-600 lg:text-base">
-                            {body}
-                        </p>
+
+            <div className={`flex flex-col lg:flex-row lg:items-center lg:gap-16 ${reverse ? 'lg:flex-row-reverse' : ''}`}>
+                {/* Feature Image */}
+                <div className="lg:w-1/2">
+                    <div className="relative overflow-hidden rounded-2xl shadow-lg">
+                        <img
+                            src={image}
+                            alt={imageAlt}
+                            className="h-64 w-full object-cover transition-transform duration-300 hover:scale-105 lg:h-80"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                     </div>
-                ))}
+                </div>
+
+                {/* Feature Items */}
+                <div className="lg:w-1/2">
+                    <div className="grid gap-6 md:gap-8">
+                        {items.map(({ heading, body }) => (
+                            <div
+                                key={heading}
+                                className="rounded-xl bg-white p-6 shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                            >
+                                <h3 className="mb-3 text-lg font-semibold text-indigo-600">
+                                    ▸ {heading}
+                                </h3>
+                                <p className="text-sm leading-relaxed text-gray-600 lg:text-base">
+                                    {body}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </div>
         </div>
     );

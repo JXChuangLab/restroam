@@ -92,6 +92,68 @@ export const listings = [
             "/img/UrbanSky/image_8.png",
         ],
     },
+    {
+        name: "Six-Bedroom Dual-Garden Retreat",
+        blurb:
+            "6 bedrooms with premium bedding, a cozy fireplace in the main living area, plus a quiet study and functional workspace…",
+
+        description: `6 bedrooms with premium bedding, a cozy fireplace in the main living area, plus a quiet study and functional workspace. Dual outdoor spaces: a sunlit front garden for morning relaxation and a fruit tree-lined backyard for barbecues. Entertainment-ready with HD home theater systems.
+Proximity to airports and entertainment districts, surrounded by dining/shopping options. Balances group recreation with productivity needs—ideal for family reunions or corporate retreats blending urban convenience with natural serenity.`,
+
+        images: [
+            "/img/SixBedroom/image_1.png",
+            "/img/SixBedroom/image_2.png",
+            "/img/SixBedroom/image_3.png",
+            "/img/SixBedroom/image_4.png",
+            "/img/SixBedroom/image_5.png",
+            "/img/SixBedroom/image_6.png",
+            "/img/SixBedroom/image_7.png",
+            "/img/SixBedroom/image_8.png",
+            "/img/SixBedroom/image_9.png",
+            "/img/SixBedroom/image_10.png",
+        ],
+    },
+    {
+        name: "Urban Green Refuge",
+        blurb:
+            "5 bedrooms with 6 beds prioritize family comfort, featuring a backyard garden for safe nature play…",
+
+        description: `5 bedrooms with 6 beds prioritize family comfort, featuring a backyard garden for safe nature play. Soundproof walls maintain tranquility, while a functional kitchen (large fridge/essentials) streamlines meal routines.
+                    A 5-minute walk leads to a park with stroller-friendly paths and shaded benches. Surrounding pharmacies and grocers handle daily needs. 20-minute airport/downtown access combines urban efficiency with residential calm, designed for multi-gen family travels seeking stress-free cohesion.`,
+
+        images: [
+            "/img/UrbanGreenRefuge/image_1.png",
+            "/img/UrbanGreenRefuge/image_2.png",
+            "/img/UrbanGreenRefuge/image_3.png",
+            "/img/UrbanGreenRefuge/image_4.png",
+            "/img/UrbanGreenRefuge/image_5.png",
+            "/img/UrbanGreenRefuge/image_6.png",
+            "/img/UrbanGreenRefuge/image_7.png",
+            "/img/UrbanGreenRefuge/image_8.png",
+            "/img/UrbanGreenRefuge/image_9.png",
+            "/img/UrbanGreenRefuge/image_10.png",
+        ],
+    },
+    {
+        name: "Spacious Urban Lodge",
+        blurb:
+            "5 bedrooms (1 King, 3 Queen, 1 Queen+Single) with individual AC, sleeping 11. Dual bathrooms ease morning routines…",
+
+        description: `5 bedrooms (1 King, 3 Queen, 1 Queen+Single) with individual AC, sleeping 11. Dual bathrooms ease morning routines, while a game nook sparks family bonding. Fully-equipped kitchen simplifies group meals.
+                    20-minute drives connect airport/downtown. Walkable supermarkets and eateries handle essentials. Soundproof windows ensure tranquility, complemented by a backyard greenery zone—designed for multigen family stays balancing urban access with residential calm.`,
+
+        images: [
+            "/img/SpaciousUrban/image_1.png",
+            "/img/SpaciousUrban/image_2.png",
+            "/img/SpaciousUrban/image_3.png",
+            "/img/SpaciousUrban/image_4.png",
+            "/img/SpaciousUrban/image_5.png",
+            "/img/SpaciousUrban/image_6.png",
+            "/img/SpaciousUrban/image_7.png",
+            "/img/SpaciousUrban/image_8.png",
+            "/img/SpaciousUrban/image_9.png",
+        ],
+    },
 ];
 
 export default function PropertiesPage() {
