@@ -6,7 +6,8 @@ export default function HomePage() {
             {/* Hero */}
             <section className="relative h-[60vh] w-full overflow-hidden">
                 <img
-                    src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1870&q=80"
+                    //src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1870&q=80"
+                    src="/img/home/home_page.JPG"
                     alt="Luxury bedroom"
                     className="absolute inset-0 h-full w-full object-cover"
                 />
