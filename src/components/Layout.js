@@ -28,7 +28,7 @@ function Navbar() {
         <header className="sticky top-0 z-50 bg-white/90 backdrop-blur shadow-sm">
             <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
                 <Link to="/" className="text-xl font-semibold text-indigo-600">
-                    Rest & Roam
+                    AURORA HOLLOW PTY
                 </Link>
 
                 <div className="flex space-x-4">
@@ -64,7 +64,7 @@ function Footer() {
     return (
         <footer className="mt-12 bg-gray-50 py-8 text-center text-sm text-gray-600">
             <div className="space-y-2">
-                <div className="font-semibold text-gray-800">Rest & Roam Pty Ltd</div>
+                <div className="font-semibold text-gray-800">AURORA HOLLOW PTY LTD.</div>
                 <div>Short-term accommodation</div>
                 <div>
                     AU: <a href="tel:+61451105818" className="hover:text-indigo-600">+61&nbsp;451&nbsp;105&nbsp;818</a> |
