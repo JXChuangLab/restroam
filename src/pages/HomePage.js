@@ -28,7 +28,7 @@ export default function HomePage() {
             </section>
 
             {/* Features */}
-            <section className="mx-auto -mt-12 max-w-6xl space-y-16 px-4 pb-24 lg:-mt-20 lg:space-y-24">
+            <section className="mx-auto max-w-6xl space-y-16 px-4 pb-24 lg:space-y-24">
                 {/* Refined Property Curation */}
                 <FeatureBlock
                     title="Refined Property Curation"
